@@ -46,7 +46,7 @@ Proyek ini memiliki 3 entitas utama:
 | movie_category_id     | INT (Auto Increment) | ID hubungan movie–kategori             | PK                            |
 | movie_id              | INT                  | ID film                                | FK → Movies(movie_id)         |
 | category_id           | INT                  | ID kategori                            | FK → Categories(category_id)  |
-| unique_movie_category | -                    | Mencegah duplikasi kategori untuk film | UNIQUE(movie_id, category_id) |
+
 
 #### 5. Ratings : Menyimpan rating dan ulasan user untuk film
 
@@ -58,7 +58,7 @@ Proyek ini memiliki 3 entitas utama:
 | score                    | DECIMAL(3,1)         | Nilai rating (0–10)                | CHECK                     |
 | review_text              | TEXT                 | Review                             | -                         |
 | rated_at                 | TIMESTAMP            | Waktu rating diberikan             | -                         |
-| unique_user_movie_rating | -                    | Mencegah user merating film 2 kali | UNIQUE(user_id, movie_id) |
+
 
 #### 6. WatchHistory : Menyimpan riwayat tontonan user (watch).
 
